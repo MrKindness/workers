@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="450" prefWidth="500" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.univ.workers.Controller">
+    <AnchorPane prefHeight="450.0" prefWidth="500.0" VBox.vgrow="ALWAYS">
+        <Button id="delButt" layoutX="264.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteWorkerEvent" prefHeight="26.0" prefWidth="106.0" text="Delete element" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="10.0" />
+        <Button id="addButt" layoutX="264.0" layoutY="49.0" mnemonicParsing="false" onAction="#addWorkerEvent" prefHeight="26.0" prefWidth="106.0" text=" Add element" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="40.0" />
+        <TableView id="tabelView" fx:id="tableView" editable="true" layoutX="2.0" layoutY="106.0" prefHeight="343.0" prefWidth="562.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="120.0">
+            <columns>
+                <TableColumn id="idColumn" fx:id="idColumn" prefWidth="103.79998469352722" text="Id" />
+                <TableColumn id="firstNameColumn" fx:id="firstNameColumn" prefWidth="130.60000610351562" text="Firstname" />
+                <TableColumn id="lastNameColumn" fx:id="lastNameColumn" prefWidth="115.20002746582031" text="Lastname" />
+                <TableColumn id="salaryColumn" fx:id="salaryColumn" prefWidth="149.0" text="Salary" />
+            </columns>
+        </TableView>
+        <TextField id="firstNameInput" fx:id="firstNameInput" layoutX="89.0" layoutY="11.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="10.0" />
+        <TextField id="lastNameInput" fx:id="lastNameInput" layoutX="89.0" layoutY="41.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="40.0" />
+        <Label layoutX="14.0" layoutY="15.0" text="Firstname" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="15.0" />
+        <Label layoutX="14.0" layoutY="45.0" text="Lastname" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="45.0" />
+        <Label layoutX="14.0" layoutY="77.0" text="Salary" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="75.0" />
+        <TextField id="salaryInput" fx:id="salaryInput" layoutX="89.0" layoutY="73.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="70.0" />
+    </AnchorPane>
+</VBox>

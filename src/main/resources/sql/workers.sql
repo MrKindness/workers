@@ -1,0 +1,8 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE SCHEMA IF NOT EXISTS sworkers;
+CREATE TABLE IF NOT EXISTS sworkers.workers(
+	id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+	firstName VARCHAR(10) NOT NULL,
+	lastName VARCHAR(10) NOT NULL,
+	salary INT NOT NULL
+);
